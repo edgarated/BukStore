@@ -43,15 +43,28 @@ deleteBtn.classList.add("delete");
 
 //Hide books
 
-const bookHide = document.querySelector("#hide");
-bookHide.addEventListener("change" , function(e){
+// const bookHide = document.querySelector("#hide");
+// bookHide.addEventListener("change" , function(e){
 
-if(bookHide.checked){
-list.style.display = "none";
+// if(bookHide.checked){
+// list.style.display = "none";
+// }else{
+//   list.style.display = "block";
+// }
+
+
+
+// })
+
+//hide books
+const checkBtn = document.querySelector("#hide");
+checkBtn.addEventListener("change", function(e){
+
+if(checkBtn.checked){
+list.style.display = "none"
+
 }else{
   list.style.display = "block";
 }
 
-
-
-})
+});
