@@ -60,12 +60,12 @@ h1, h2{
 }
 
 #book-list li:hover{
-  border-color: rgb(139, 214, 210);;
+  border-color: #9361bf;
 }
 
 .delete{
   float: right;
-  background: rgb(139, 214, 210);;
+  background: #9361bf;
   padding: 6px;
   border-radius: 4px;
   cursor: pointer;
@@ -95,8 +95,8 @@ h1, h2{
 }
 
 #add-book button{
-  border: 1px solid rgb(139, 214, 210);;
-  background: rgb(139, 214, 210);;
+  border: 1px solid #9361bf;
+  background: #9361bf;
   padding: 10px 20px;
   font-size: 16px;
   display: inline-block;
@@ -104,7 +104,7 @@ h1, h2{
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   width: 100px;
-  float: none;
+  float: left;
   margin: 20px 0;
   border-left: 0;
   color: white;

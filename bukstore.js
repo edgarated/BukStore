@@ -1,4 +1,4 @@
-//To delete item
+//Delete a button
 const list = document.querySelector("#book-list ul");
 list.addEventListener("click" , function(e){
 
@@ -8,53 +8,32 @@ list.addEventListener("click" , function(e){
 
 });
 
-//To add form
+//Add book list
 const addForm = document.forms["add-book"];
-addForm.addEventListener("submit" , function(e){
-
-  //To prevent the default form action
+addForm.addEventListener("submit", function(e){
+//prevents the default action
   e.preventDefault();
+const value = addForm.querySelector('input[type="text"]').value;
 
-  const value = addForm.querySelector('input[type="text"]').value;
-  console.log(value);
-
-
-// To create DOM elements
-
+//create elements
 const li = document.createElement("li");
 const bookName = document.createElement("span");
 const deleteBtn = document.createElement("span");
 
-//Append to the DOM
+//add content
+deleteBtn.textContent="delete";
+bookName.textContent = value
+
+//add class
+deleteBtn.classList.add("delete");
+bookName.classList.add("name");
+
+// // append to DOM
 li.appendChild(bookName);
 li.appendChild(deleteBtn);
 list.appendChild(li);
 
-//To add  content to the DOM
-
-bookName.textContent = value;
-deleteBtn.textContent = "delete";
-
-//To add class to DOM
-bookName.classList.add("name");
-deleteBtn.classList.add("delete");
-
 });
-
-//Hide books
-
-// const bookHide = document.querySelector("#hide");
-// bookHide.addEventListener("change" , function(e){
-
-// if(bookHide.checked){
-// list.style.display = "none";
-// }else{
-//   list.style.display = "block";
-// }
-
-
-
-// })
 
 //hide books
 const checkBtn = document.querySelector("#hide");
@@ -68,3 +47,7 @@ list.style.display = "none"
 }
 
 });
+
+
+
+
