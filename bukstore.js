@@ -40,3 +40,18 @@ bookName.classList.add("name");
 deleteBtn.classList.add("delete");
 
 });
+
+//Hide books
+
+const bookHide = document.querySelector("hide");
+bookHide.addEventListener("change" , function(e){
+
+if(bookHide.checked){
+list.style.display = "none";
+}else{
+  list.style.display = "block";
+}
+
+
+
+})
