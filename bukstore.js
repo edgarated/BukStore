@@ -67,7 +67,7 @@ Array.from(books).forEach(function(book){
 
 })
 
-})
+});
 
 
 
