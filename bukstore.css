@@ -60,12 +60,12 @@ h1, h2{
 }
 
 #book-list li:hover{
-  border-color: rgb(139, 214, 210);
+  border-color:rgb(139, 214, 210);
 }
 
 .delete{
   float: right;
-  background: rgb(139, 214, 210);
+  background:rgb(139, 214, 210);
   padding: 6px;
   border-radius: 4px;
   cursor: pointer;
